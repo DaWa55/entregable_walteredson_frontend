@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="img/logo.jpg" alt="Logo EcoMarket"> EcoMarket
+        </a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul id="menuList">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <header>
+        <h1>Alimentos Frescos y Orgánicos</h1>
+        <p>Llevamos lo mejor de la naturaleza directamente a tu hogar, cuidando tu salud y el planeta de forma sostenible.</p>
+        <a href="#catalogo" class="btn">Ver Catálogo</a>
+    </header>
+
+    <!-- Secciones -->
+    <main class="container">
+        
+        <section class="content-section">
+            <img src="img/agricultura.jpg" alt="Agricultura Sostenible">
+            <div class="content-text">
+                <h3>Comprometidos con el Campo</h3>
+                <p>Trabajamos directamente con agricultores locales que practican la agricultura orgánica certificada. Sin intermediarios, garantizamos que cada alimento conserve sus nutrientes naturales y llegue fresco a tu mesa.</p>
+                <a href="contacto.html" class="btn">Conoce más</a>
+            </div>
+        </section>
+
+        <section class="content-section reverse">
+            <img src="img/sostenible.jpg" alt="Empaque Ecológico">
+            <div class="content-text">
+                <h3>100% Empaques Ecológicos</h3>
+                <p>Nuestra responsabilidad ambiental no se detiene en la cosecha. Todos nuestros envases y bolsas de entrega son biodegradables, reciclables y libres de plásticos de un solo uso para proteger nuestro entorno.</p>
+            </div>
+        </section>
+
+        <!-- Catálogo -->
+        <h2 class="section-title" id="catalogo">Nuestros Productos Destacados</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="img/frutas.jpg" alt="Frutas Frescas">
+                <div class="card-body">
+                    <h3>Frutas Frescas</h3>
+                    <p>100% orgánicas, cosechadas en su punto exacto de maduración.</p>
+                    <div class="price">15.00 so / kg</div>
+                    <button class="btn" onclick="agregarAlCarrito('Frutas Frescas')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/verduras.jpg" alt="Verduras Orgánicas">
+                <div class="card-body">
+                    <h3>Verduras Orgánicas</h3>
+                    <p>Hortalizas limpias y cultivadas sin pesticidas químicos.</p>
+                    <div class="price">12.00 so / atado</div>
+                    <button class="btn" onclick="agregarAlCarrito('Verduras Orgánicas')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/granos.jpg" alt="Granos y Legumbres">
+                <div class="card-body">
+                    <h3>Granos y Legumbres</h3>
+                    <p>Excelente fuente de energía vegetal y nutrientes esenciales.</p>
+                    <div class="price">10.00 so / bolsa</div>
+                    <button class="btn" onclick="agregarAlCarrito('Granos y Legumbres')">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados por mi, oh si oh si.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

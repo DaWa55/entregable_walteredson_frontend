@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - EcoMarket</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="img/logo.jpg" alt="Logo EcoMarket"> EcoMarket
+        </a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul id="menuList">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario -->
+    <main class="container">
+        <div class="form-box">
+            <h2 class="section-title" style="margin-bottom: 1rem;">Contáctanos</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 1.5rem;">Escríbenos para consultas, pedidos o dudas sobre nuestros productos orgánicos.</p>
+            
+            <form id="formContacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" required placeholder="Ej. Carlos Mendoza">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" required placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" placeholder="999888777">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados por mi, oh si.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

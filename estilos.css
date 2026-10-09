@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+:root {
+  --color-primary: #2d6a4f;   
+  --color-secondary: #52b788; 
+  --color-accent: #d4a373;    
+  --color-bg: #f8f9fa;        
+  --color-text: #212529;      
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+nav .logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--color-secondary);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--color-white);
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  color: #666;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.btn {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Secciones combinadas */
+.content-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.content-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.content-section img {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.content-text {
+  width: 50%;
+}
+
+.content-text h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.content-text p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Grilla de productos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.card-body p {
+  color: #666;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.form-box {
+  background: var(--color-white);
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #212529;
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .content-section, .content-section.reverse {
+    flex-direction: column;
+  }
+
+  .content-section img, .content-text {
+    width: 100%;
+  }
+}
